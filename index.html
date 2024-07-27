@@ -28,6 +28,10 @@
                 <li v-for="(task, index) in store">{{ task.text }}</li>
             </ul>
         </div>
+
+        <!-- Input di invio -->
+        <input v-model="itemLista"  class="input" type="text" placeholder="Inserisci un task">
+        <button @click="insert" @keyup.enter="insert">Aggiungi</button>
        
     </div>
     <script src="main.js"></script>
